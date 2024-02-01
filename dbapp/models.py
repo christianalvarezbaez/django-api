@@ -43,7 +43,6 @@ class GeographyColumns(models.Model):
     class Meta:
         managed = False
         db_table = 'geography_columns'
-        db_table_comment = "Shows all defined geography columns. Matches PostGIS' geography_columns functionality."
 
 
 class GeometryColumns(models.Model):
@@ -58,7 +57,6 @@ class GeometryColumns(models.Model):
     class Meta:
         managed = False
         db_table = 'geometry_columns'
-        db_table_comment = "Shows all defined geometry columns. Matches PostGIS' geometry_columns functionality."
 
 
 class KafkaTest(models.Model):
@@ -81,7 +79,6 @@ class SpatialRefSys(models.Model):
     class Meta:
         managed = False
         db_table = 'spatial_ref_sys'
-        db_table_comment = "Shows all defined Spatial Reference Identifiers (SRIDs). Matches PostGIS' spatial_ref_sys table."
 
 
 class TestingTable(models.Model):
